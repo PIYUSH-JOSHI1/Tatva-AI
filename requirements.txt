@@ -17,7 +17,7 @@ tzdata
 packaging
 requests
 
-# Data Science & ML - MINIMAL SET
+# Data Science & ML
 matplotlib
 scikit-learn
 h5py
@@ -25,18 +25,17 @@ h5py
 # Medical Imaging
 pydicom
 
-# Choose ONE deep learning framework - using PyTorch (lighter than TensorFlow)
-# Comment out tensorflow - it conflicts with Streamlit on Python 3.13
-# tensorflow>=2.15.0  # DISABLED - causes protobuf conflict
+# Deep Learning - TensorFlow for brain tumor detection
+tensorflow>=2.15.0
 
-# PyTorch for models
+# PyTorch for other models (CPU version to save space)
 torch --index-url https://download.pytorch.org/whl/cpu
 torchvision --index-url https://download.pytorch.org/whl/cpu
 
 # YOLO for detection
 ultralytics
 
-# Transformers (needed if using HuggingFace models)
+# Transformers (for HuggingFace models)
 transformers
 
 # AI Chatbot - Google Gemini 
